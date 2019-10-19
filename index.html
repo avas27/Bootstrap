@@ -21,68 +21,7 @@
   </head>
 
   <body>
-    <div id="reserveModal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-        
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title">Reserve a Table</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-              <div class="modal-body">
-                    <div class="row">
-                        <div class="col-12">
-                            <form>
-                                <div class="form-group row">
-                                      <label class=" col-md-2 col-form-label"
-                                        >Number of Guests</label
-                                      >
-                                      <div class="col-md-8">
-                                        <label class="radio-inline">
-                                          <input type="radio" name="guest" /> 1
-                                        </label>
-                                        <label class="radio-inline ml-4">
-                                          <input type="radio" name="guest" /> 2
-                                        </label>
-                                        <label class="radio-inline ml-4">
-                                          <input type="radio" name="guest" /> 3
-                                        </label>
-                                        <label class="radio-inline ml-4">
-                                          <input type="radio" name="guest" /> 4
-                                        </label>
-                                        <label class="radio-inline ml-4">
-                                          <input type="radio" name="guest" /> 5
-                                        </label>
-                                        <label class="radio-inline ml-4">
-                                          <input type="radio" name="guest" /> 6
-                                        </label>
-                                      </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="section" class="col-md-2 col-form-label">Section</label>
-                                    <div class="btn-group col-md-2" data-toggle="buttons">
-                                      <button class="btn btn-success active">Non-Smoking</button>
-                                      <button class="btn btn-danger">Smoking</button>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="date" class="col-md-2 col-form-label">Date and Time</label>
-                                    <div class="col-md-5"><input type="text" id="date" class="form-control" placeholder="date"></div>
-                                    <div class="col-md-5"><input type="text" class="form-control" placeholder="time"></div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="offset-md-2"> 
-                                       <input type="submit"data-dismiss="modal" class="btn btn-secondary" value="Cancel"> <input type="submit" class="btn btn-primary" value="Reserve">
-                                    </div>
-                                </div>
-                            </form>
-                              </div>
-                            </div>  
-              </div>
-            </div>
-          </div>
-        </div>
+   
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
 <div class="container">
   <button class="navbar-toggler" data-target="#NavBar" data-toggle="collapse">
@@ -140,7 +79,74 @@
             </div>
         </div>
     </div>
-   
+    <!-- reservation modal -->
+    <!-- at top of content -->
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Reserve a Table</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                  <div class="row">
+                      <div class="col-12">
+                          <form>
+                              <div class="form-group row">
+                                    <label class=" col-md-2 col-form-label"
+                                      >Number of Guests</label
+                                    >
+                                    <div class="col-md-8">
+                                      <label class="radio-inline">
+                                        <input type="radio" name="guest" /> 1
+                                      </label>
+                                      <label class="radio-inline ml-4">
+                                        <input type="radio" name="guest" /> 2
+                                      </label>
+                                      <label class="radio-inline ml-4">
+                                        <input type="radio" name="guest" /> 3
+                                      </label>
+                                      <label class="radio-inline ml-4">
+                                        <input type="radio" name="guest" /> 4
+                                      </label>
+                                      <label class="radio-inline ml-4">
+                                        <input type="radio" name="guest" /> 5
+                                      </label>
+                                      <label class="radio-inline ml-4">
+                                        <input type="radio" name="guest" /> 6
+                                      </label>
+                                    </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label for="section" class="col-md-2 col-form-label">Section</label>
+                                  <div class="btn-group btn-group-toggle col-md-2" data-toggle="buttons" role="group">
+                                      <label for="Nonsmoking" class="btn btn-success active">
+                                          <input type="radio" id="Nonsmoking" name="section" class="form-check-input" checked> Non-Smoking
+                                        </label>
+                                    <label for="smoking" class="btn btn-danger">
+                                        <input type="radio" id="smoking" name="section" class="form-check-input"> Smoking
+                                      </label>
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label for="date" class="col-md-2 col-form-label">Date and Time</label>
+                                  <div class="col-md-5"><input type="text" id="date" class="form-control" placeholder="date"></div>
+                                  <div class="col-md-5"><input type="text" class="form-control" placeholder="time"></div>
+                              </div>
+                              <div class="form-group row">
+                                  <div class="offset-md-2"> 
+                                     <input type="submit"data-dismiss="modal" class="btn btn-secondary" value="Cancel"> <input type="submit" class="btn btn-primary" value="Reserve">
+                                  </div>
+                              </div>
+                          </form>
+                            </div>
+                          </div>  
+            </div>
+          </div>
+        </div>
+      </div>
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
